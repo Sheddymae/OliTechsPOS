@@ -10,12 +10,9 @@ echo Installing dependencies...
 call npm install
 if errorlevel 1 (echo npm install failed. & pause & exit /b 1)
 echo.
-choice /C YN /N /M "Create Desktop and Start Menu shortcuts for OliTechs PMS ^& POS? [Y/N]: "
+choice /C YN /N /M "Create a Desktop shortcut for OliTechs PMS ^& POS? [Y/N]: "
 if errorlevel 2 goto START
-if errorlevel 1 (
-  powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scriptscreate-shortcut.ps1"
-  if errorlevel 1 echo Shortcut creation failed. You can still start OliTechs manually.
-)
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$p='%~dp0START-OLITECHS.bat';$w=New-Object -ComObject WScript.Shell;$s=$w.CreateShortcut([Environment]::GetFolderPath('Desktop')+'OliTechs PMS & POS.lnk');$s.TargetPath=$p;$s.WorkingDirectory='%~dp0';$s.Description='OliTechs PMS & POS';$s.Save();Write-Host 'Desktop shortcut created.'"
 :START
 echo.
 echo Starting OliTechs PMS, POS and Central Licensing Platform...
