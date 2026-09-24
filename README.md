@@ -14,10 +14,10 @@ Local-first hotel PMS/POS with a separate central licensing and customer onboard
 - Protected platform administrator login
 - Hotel registration and approval workflow
 - Public customer registration
-- Starter, Professional and Enterprise packages
-- Package pricing, room limits, feature lists and trial days editable by platform admin
+- Standard, Premium and Professional packages
+- Package pricing, room limits, feature permissions and trial days editable by platform admin
 - 7-day free trial by default
-- Company subscription status and expiry controls
+- Company subscription status, expiry and room-limit controls
 - Hotel administrator username and password provisioning
 - Local installation sync for approved package, subscription and hotel admin credentials
 - Central audit log

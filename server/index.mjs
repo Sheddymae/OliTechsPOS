@@ -13,7 +13,7 @@ const verifyPassword=(password,stored)=>{if(!stored)return false;const [salt,has
 const cookies=req=>Object.fromEntries(String(req.headers.cookie||'').split(';').filter(Boolean).map(x=>{const i=x.indexOf('=');return [x.slice(0,i).trim(),decodeURIComponent(x.slice(i+1).trim())]}));
 const userFor=req=>{const sid=cookies(req).olitech_session;const u=sid?sessions.get(sid):null;return u||null};
 const auth=(req,res,roles=[])=>{const u=userFor(req);if(!u){res.writeHead(401,{'content-type':'application/json'});res.end(JSON.stringify({error:'Authentication required'}));return null}if(roles.length&&!roles.includes(u.role)){res.writeHead(403,{'content-type':'application/json'});res.end(JSON.stringify({error:'Administrator permission required'}));return null}return u};
-const subscriptionActive=d=>{const s=d.subscription||{};return s.status==='active' && (!s.expiresAt || new Date(s.expiresAt)>new Date())};
+const subscriptionActive=d=>{const s=d.subscription||{};return ['active','trial'].includes(s.status) && (!s.expiresAt || new Date(s.expiresAt)>new Date())};
 async function printRaw(printer,text){
   const type=printer.type||'network';
   if(type==='network'){
