@@ -77,3 +77,73 @@
   .brandMarkImage{width:34px;height:34px}
   .mobileBrand img{width:38px;height:38px}
 }
+
+
+/* Dedicated OliTechs central platform administrator */
+.platformLogin{min-height:100vh;background:#18181b;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden;color:#18181b}
+.platformLoginGlow{position:absolute;width:620px;height:620px;border-radius:50%;background:#eab308;opacity:.18;filter:blur(70px);top:-260px;right:-160px}
+.platformLoginCard{position:relative;z-index:2;width:min(520px,94vw);background:#fff;border-radius:24px;padding:38px;box-shadow:0 35px 90px #0008}
+.platformLoginBrand,.platformBrand{display:flex;align-items:center;gap:11px}
+.platformLoginBrand{margin-bottom:28px}
+.platformLoginBrand img,.platformBrand img{width:42px;height:42px;object-fit:contain}
+.platformLoginBrand b,.platformBrand b{display:block;font-size:20px}
+.platformLoginBrand small,.platformBrand small{display:block;color:#888;font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+.platformLoginCard h1{font-size:38px;letter-spacing:-1.7px;margin:12px 0 8px}
+.platformLoginCard>p{color:#666;line-height:1.65;font-size:13px;margin:0 0 24px}
+.platformLoginForm{display:grid;gap:13px}
+.platformLoginForm label,.formGrid label{display:grid;gap:6px;font-size:11px;font-weight:900}
+.platformLoginForm input,.formGrid input,.formGrid select{box-sizing:border-box;width:100%;height:44px;border:1px solid #ddd;border-radius:9px;padding:0 12px;background:#fff;color:#18181b}
+.platformLoginForm input:focus,.formGrid input:focus,.formGrid select:focus{outline:none;border-color:#eab308;box-shadow:0 0 0 3px #eab30822}
+.platformSecurity{display:flex;justify-content:center;align-items:center;gap:7px;color:#888;font-size:10px;margin-top:18px}
+.platformShell{min-height:100vh;background:#f5f5f3;color:#18181b}
+.platformShell>header{height:70px;background:#18181b;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid #292929}
+.platformShell>header .top{display:flex;align-items:center;gap:10px}
+.platformMain{max-width:1320px;margin:0 auto;padding:34px 26px 70px}
+.platformHead{display:flex;align-items:flex-end;justify-content:space-between;gap:25px;margin-bottom:25px}
+.platformHead h1{font-size:38px;letter-spacing:-1.5px;margin:9px 0 6px}
+.platformHead p,.sectionToolbar p{color:#777;margin:0;line-height:1.55}
+.platformHead .adminShield{margin-bottom:2px}
+.platformTopLink{color:#fff;text-decoration:none;font-size:11px;font-weight:800;padding:8px 11px;border:1px solid #444;border-radius:8px}
+.platformOverviewGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-top:18px}
+.platformOverviewGrid .panel{padding:22px}
+.platformOverviewGrid h2,.sectionToolbar h2{margin:0 0 6px;font-size:21px}
+.packageMiniGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.packageMini{background:#f7f7f5;border:1px solid #e4e4e4;border-radius:12px;padding:14px;display:grid;gap:4px}
+.packageMini b{font-size:15px}.packageMini span{font-size:11px;color:#777}
+.platformActionList{display:grid;gap:9px;margin-top:16px}
+.platformActionList button{width:100%;display:flex;align-items:center;gap:8px;justify-content:flex-start;background:#fafafa;border:1px solid #e5e5e5;border-radius:10px;padding:12px;font-weight:800}
+.platformActionList button svg:last-child{margin-left:auto}
+.sectionToolbar{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}
+.sectionToolbar>button,.packageActions button,.companySummary button{display:inline-flex;align-items:center;gap:6px}
+.featureLegend{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:18px}
+.featureLegend span{background:#fff;border:1px solid #e4e4e4;border-radius:9px;padding:9px;font-size:10px;color:#777}
+.featureLegend b{color:#222}
+.platformCompanies{display:grid;gap:15px}
+.platformCompany{background:#fff;border:1px solid #ddd;border-radius:16px;padding:20px;box-shadow:0 5px 22px #00000008}
+.platformCompanyHead{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.companyTitle{display:flex;align-items:center;gap:8px}.companyTitle h2{margin:0;font-size:19px}.platformCompanyHead small{display:block;color:#888;margin-top:5px}
+.sourceBadge,.subscriptionStatus{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;border-radius:999px;padding:5px 8px;background:#eee;color:#555}
+.sourceBadge.ok,.subscriptionStatus.ok{background:#e8f7ed;color:#17743c}.sourceBadge.pending,.subscriptionStatus.pending{background:#fff5d3;color:#8a6500}.sourceBadge.blocked,.subscriptionStatus.blocked{background:#fdecea;color:#a33a31}
+.companyDetails{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:17px 0;padding:12px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;font-size:11px;color:#777}
+.companySummary{display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:14px;align-items:end}
+.companySummary>div{display:grid;gap:4px}.companySummary small{color:#999}.companySummary b{font-size:13px}
+.subscriptionEditor{display:grid;gap:15px}.formGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.assignedFeatures{background:#fafafa;border:1px solid #e6e6e6;border-radius:11px;padding:13px}
+.assignedHeader{display:flex;justify-content:space-between;align-items:center;font-size:11px}.assignedHeader span{color:#888}
+.featureChips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.featureChips span{display:inline-flex;align-items:center;gap:5px;background:#eaf8ef;color:#176c36;border-radius:999px;padding:5px 8px;font-size:10px;font-weight:800}
+.adminAccountBox{background:#f7f7f5;border:1px solid #e3e3e3;border-radius:11px;padding:13px;display:flex;justify-content:space-between;gap:15px;align-items:center}
+.adminAccountBox>div:first-child{display:grid;gap:4px}.adminAccountBox small{display:block;color:#888;max-width:500px;font-size:10px}.adminCredentials{display:flex;gap:8px;min-width:400px}.adminCredentials input{height:40px}
+.packageAdminGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.packageAdminCard{background:#fff;border:1px solid #ddd;border-radius:16px;padding:18px;box-shadow:0 5px 22px #00000008}
+.packageAdminCard.inactive{opacity:.58}.packageAdminHead{display:flex;justify-content:space-between;gap:10px}.packageCode{font-size:9px;color:#999;text-transform:uppercase;letter-spacing:1px}.packageAdminHead h3{font-size:23px;margin:5px 0 3px}.packageAdminHead p{margin:0;color:#777;font-size:11px}
+.packagePrice{display:flex;align-items:baseline;gap:4px;margin:18px 0 8px}.packagePrice b{font-size:25px}.packagePrice span{color:#888;font-size:11px}.packageMeta{display:flex;gap:7px}.packageMeta span{background:#f3f3f3;border-radius:7px;padding:6px 8px;font-size:10px;font-weight:800}
+.packageAdminCard ul{list-style:none;padding:13px 0;margin:0;display:grid;gap:7px;min-height:155px}.packageAdminCard li{display:flex;align-items:center;gap:6px;font-size:11px}.packageAdminCard li svg{color:#159447}
+.packageActions{display:flex;gap:8px;border-top:1px solid #eee;padding-top:12px}.packageActions button{flex:1;justify-content:center}
+.overlay{position:fixed;inset:0;background:#0008;z-index:100;display:grid;place-items:center;padding:20px}
+.packageModal{width:min(920px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:18px;padding:22px;box-shadow:0 30px 80px #0008}
+.modalHead{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:18px}.modalHead h2{margin:0 0 5px}.modalHead button{background:#f3f3f3;border-radius:8px;padding:7px}
+.featureEditor{margin-top:18px;border-top:1px solid #eee;padding-top:16px}.featureCheckGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px}
+.featureCheck{display:flex;gap:9px;border:1px solid #e5e5e5;border-radius:10px;padding:10px;cursor:pointer}.featureCheck input{position:absolute;opacity:0}.featureCheck>span{display:flex;gap:8px;align-items:flex-start}.featureCheck>span>span:first-child{width:17px;height:17px;border-radius:5px;background:#eab308;color:#fff;display:grid;place-items:center;flex:none}.featureCheck .emptyCheck{background:#fff!important;border:1px solid #ccc}.featureCheck small{display:block;color:#888;font-weight:400;margin-top:2px}
+.auditTable{background:#fff;border:1px solid #ddd;border-radius:14px;overflow:hidden}.auditRow{display:grid;grid-template-columns:180px 1fr 1fr 140px;gap:12px;padding:12px 15px;border-bottom:1px solid #eee;font-size:11px;align-items:center}.auditRow:last-child{border-bottom:0}.auditRow span{color:#777}.auditRow small{color:#888}
+@media(max-width:1050px){.platformOverviewGrid,.packageAdminGrid{grid-template-columns:1fr 1fr}.featureLegend{grid-template-columns:repeat(3,1fr)}.companySummary{grid-template-columns:1fr 1fr}.companySummary button{grid-column:1/-1}.adminAccountBox{align-items:stretch;flex-direction:column}.adminCredentials{min-width:0}.formGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.platformShell>header{padding:0 15px}.platformShell>header .live,.platformTopLink{display:none}.platformMain{padding:22px 15px 50px}.platformHead{align-items:flex-start;flex-direction:column}.platformHead h1{font-size:30px}.platformOverviewGrid,.packageAdminGrid,.packageMiniGrid,.featureLegend,.featureCheckGrid,.formGrid,.companyDetails,.companySummary{grid-template-columns:1fr}.adminCredentials{flex-direction:column}.auditRow{grid-template-columns:1fr;gap:4px}.platformLoginCard{padding:26px}.platformLoginCard h1{font-size:32px}}
