@@ -105,3 +105,5 @@ function PlatformAdmin(){
  <div className="adminTabs"><button className={tab==='overview'?'active':''} onClick={()=>setTab('overview')}><Activity size={16}/>Overview</button><button className={tab==='companies'?'active':''} onClick={()=>setTab('companies')}><Building2 size={16}/>Hotels</button><button className={tab==='packages'?'active':''} onClick={()=>setTab('packages')}><Layers3 size={16}/>Packages</button><button className={tab==='audit'?'active':''} onClick={()=>setTab('audit')}><Activity size={16}/>Audit log</button></div>
  <div className="adminStats"><div className="adminMetric"><Building2/><b>{companies.length}</b><span>Registered hotels</span></div><div className="adminMetric"><Clock3/><b>{pending}</b><span>Awaiting approval</span></div><div className="adminMetric"><CreditCard/><b>{active}</b><span>Active / trial</span></div><div className="adminMetric"><Package/><b>{packages.filter(p=>p.active!==false).length}</b></div></div></main></div>;
 }
+
+export default App;
