@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './main.jsx';
+import App from './App.jsx';
 import { PublicLanding, PublicSignup } from './public-site.jsx';
 
 const path = window.location.pathname;
