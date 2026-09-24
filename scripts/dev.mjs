@@ -50,6 +50,11 @@ console.log(`Starting OliTechs licensing platform on port ${platformPort}...`);
 run(`set PLATFORM_PORT=${platformPort}&& node platform-server/index.mjs`, 'OliTechs Licensing Platform');
 console.log(`Starting OliTechs web on port ${webPort}...`);
 run(`npx vite --host 0.0.0.0 --port ${webPort}`, 'OliTechs web');
+setTimeout(() => {
+  const url = `http://127.0.0.1:${webPort}`;
+  const opener = process.platform === 'win32' ? 'start' : process.platform === 'darwin' ? 'open' : 'xdg-open';
+  exec(`${opener} ${url}`, { windowsHide: true });
+}, 2500);
 
 function stop() {
   for (const child of children) {
