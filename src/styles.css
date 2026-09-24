@@ -62,3 +62,18 @@
 @keyframes loginCardIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}@keyframes loginFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(16px,18px,0)}}@keyframes orbFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(8deg)}}@keyframes statusPulse{0%,100%{opacity:1}50%{opacity:.45}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}@keyframes helperIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 @media(max-width:780px){.loginScreen{padding:15px}.loginCardPro{grid-template-columns:1fr;min-height:0;max-height:none}.loginWelcome{display:none}.loginFormPanel{padding:28px 23px 23px}.loginTopbar{margin-bottom:38px}.mobileBrand{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:#18181b;color:#eab308;font-weight:1000;margin-bottom:20px}.loginIntro h1{font-size:32px}.loginGlowOne{width:240px;height:240px}.loginGlowTwo{width:190px;height:190px}}
 @media(prefers-reduced-motion:reduce){.loginCardPro,.loginGlow,.loginOrb,.statusPill>span,.loginError,.loginHelper{animation:none}.loginField input,.loginSubmit,.otherSignIn{transition:none}}
+
+/* Official OliTechs brand assets */
+.welcomeLogo{display:flex;align-items:center;gap:11px;margin-bottom:58px}
+.welcomeLogo img{display:block;width:min(250px,100%);height:auto;max-height:86px;object-fit:contain;object-position:left center}
+.brandLogoWrap{display:flex;align-items:center;min-width:0}
+.brandLogo{display:block;width:146px;height:auto;max-height:44px;object-fit:contain;object-position:left center}
+.brandMarkImage{display:block;width:38px;height:38px;object-fit:contain;flex:none}
+.mobileBrand{display:grid!important;place-items:center;overflow:hidden}
+.mobileBrand img{display:block;width:38px;height:38px;object-fit:contain}
+.publicBrand .brandMarkImage{width:36px;height:36px}
+@media(max-width:780px){
+  .brandLogo{width:138px;max-height:42px}
+  .brandMarkImage{width:34px;height:34px}
+  .mobileBrand img{width:38px;height:38px}
+}

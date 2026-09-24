@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title"><title id="title">OliTechs</title>
+<path fill="#FF9501" d="M8 8a92 92 0 0 1 92 92H8Z"/>
+<path fill="#FF9501" d="M192 100a92 92 0 0 1-92 92v-92Z"/>
+<circle cx="146" cy="54" r="36" fill="#1800AC"/>
+<circle cx="54" cy="146" r="36" fill="#1800AC"/>
+</svg>
